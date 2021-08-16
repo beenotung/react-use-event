@@ -1,0 +1,30 @@
+table {
+  border-collapse: collapse;
+}
+td {
+  border: 1px solid lightgray;
+  padding: 1em;
+}
+table button {
+  margin: 0 0.5em;
+  padding: 0.2em 0.5em;
+  font-size: 1em;
+}
+code {
+  font-size: 1em;
+}
+button {
+  text-transform: capitalize;
+}
+.product:nth-child(1) {
+  background-color: pink;
+}
+.product:nth-child(2) {
+  background-color: papayawhip;
+}
+.product:nth-child(3) {
+  background-color: pink;
+}
+.report {
+  background-color: oldlace;
+}

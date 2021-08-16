@@ -1,0 +1,92 @@
+{
+  "name": "react-use-event",
+  "version": "1.0.0",
+  "description": "React use hook for global event dispatch and listening",
+  "keywords": [
+    "react",
+    "react hook",
+    "event",
+    "dispatch",
+    "communication",
+    "global",
+    "shared",
+    "state management"
+  ],
+  "author": "Beeno Tung <aabbcc1241@yahoo.com.hk> (https://beeno-tung.surge.sh)",
+  "license": "BSD-2-Clause",
+  "main": "dist/cjs/core.js",
+  "types": "dist/cjs/core.d.ts",
+  "module": "dist/esm/core.js",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "fix-react": "node scripts/fix-react.js",
+    "format": "run-s restore prettier",
+    "prettier": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "start": "run-s fix-react react:start",
+    "react:start": "react-scripts start",
+    "react:build": "react-scripts build",
+    "restore": "node scripts/restore.js",
+    "clean": "rimraf dist",
+    "build": "run-s clean format tsc",
+    "tsc": "run-p build:cjs build:esm",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "test": "react-scripts test",
+    "build:demo": "run-s fix-react react:build",
+    "upload": "run-s build:demo surge",
+    "surge": "surge build https://react-use-event-demo.surge.sh",
+    "eject": "react-scripts eject"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.53",
+    "@types/react-dom": "^16.9.8",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-refresh": "^0.9.0",
+    "react-scripts": "4.0.1",
+    "rimraf": "^3.0.2",
+    "surge": "^0.21.7",
+    "typescript": "^4.0.3",
+    "use-state-proxy": "^0.3.2",
+    "web-vitals": "^0.2.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beenotung/react-use-event.git"
+  },
+  "bugs": {
+    "url": "https://github.com/beenotung/react-use-event/issues"
+  },
+  "homepage": "https://github.com/beenotung/react-use-event#readme"
+}
