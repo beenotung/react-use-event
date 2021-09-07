@@ -14,9 +14,9 @@
   ],
   "author": "Beeno Tung <aabbcc1241@yahoo.com.hk> (https://beeno-tung.surge.sh)",
   "license": "BSD-2-Clause",
-  "main": "dist/cjs/core.js",
-  "types": "dist/cjs/core.d.ts",
-  "module": "dist/esm/core.js",
+  "main": "dist/cjs/use-event.js",
+  "types": "dist/cjs/use-event.d.ts",
+  "module": "dist/esm/use-event.js",
   "files": [
     "src",
     "dist"
