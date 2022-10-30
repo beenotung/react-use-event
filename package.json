@@ -41,7 +41,7 @@
     "eject": "react-scripts eject"
   },
   "peerDependencies": {
-    "react": "^17.0.1"
+    "react": "*"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.4",
