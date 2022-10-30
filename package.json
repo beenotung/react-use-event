@@ -33,7 +33,7 @@
     "tsc": "run-p build:cjs build:esm",
     "build:cjs": "tsc -p tsconfig.cjs.json",
     "build:esm": "tsc -p tsconfig.esm.json",
-    "test": "react-scripts test",
+    "test": "CI=true react-scripts test",
     "build:demo": "run-s fix-react react:build",
     "upload": "run-s build:demo surge",
     "surge": "surge build https://react-use-event-demo.surge.sh",
