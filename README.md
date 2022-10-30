@@ -2,7 +2,10 @@
 
 > React use hook for global event dispatch and listening
 
-[![NPM](https://img.shields.io/npm/v/react-use-event.svg)](https://www.npmjs.com/package/react-use-event) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-use-event.svg)](https://www.npmjs.com/package/react-use-event)
+[![Minified Package Size](https://img.shields.io/bundlephobia/min/react-use-event)](https://bundlephobia.com/package/react-use-event)
+[![Minified and Gzipped Package Size](https://img.shields.io/bundlephobia/minzip/react-use-event)](https://bundlephobia.com/package/react-use-event)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 This package provide a simple mechanism **for components across any level in the hierarchy to communicate via events**. ~~Without a top-level redux store and verbose reducer.~~
 
