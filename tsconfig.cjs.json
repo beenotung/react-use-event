@@ -19,7 +19,7 @@
     "isolatedModules": true,
     "noEmit": false,
     "declaration": true,
-    "sourceMap": false,
+    "sourceMap": true,
     "jsx": "react-jsx",
     "outDir": "dist/cjs"
   },

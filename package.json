@@ -18,6 +18,7 @@
   "types": "dist/cjs/use-event.d.ts",
   "module": "dist/esm/use-event.js",
   "files": [
+    "src",
     "dist"
   ],
   "scripts": {
