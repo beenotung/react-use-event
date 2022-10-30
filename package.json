@@ -1,6 +1,6 @@
 {
   "name": "react-use-event",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React use hook for global event dispatch and listening",
   "keywords": [
     "react",
