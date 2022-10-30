@@ -2,7 +2,7 @@ import { useCallback, useEffect } from 'react';
 
 export type EventType<
   Type extends string = string,
-  Data extends object = {}
+  Data extends object = {},
 > = {
   type: Type;
 } & Data;
