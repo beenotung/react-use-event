@@ -15,6 +15,7 @@ This package provide a simple mechanism **for components across any level in the
 - Support any javascript data type
 - Do not need to combine states and reducers into a centralized redux store
 - Compatible with `React.useState()` and other stateful use hooks
+- Works in both `react-dom` and `react-native` environment
 
 Demo: [https://react-use-event-demo.surge.sh](https://react-use-event-demo.surge.sh)
 

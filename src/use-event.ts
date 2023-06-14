@@ -1,8 +1,9 @@
 import { useCallback, useEffect } from 'react';
+import { eventSystem as window } from './event-system';
 
 export type EventType<
   Type extends string = string,
-  Data extends object = {},
+  Data extends object = {}
 > = {
   type: Type;
 } & Data;
