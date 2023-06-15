@@ -12,7 +12,12 @@ type EventSystem = {
  * implement in js for react native when not running with DOM
  */
 function getEventSystem(): EventSystem {
-  if (typeof window !== 'undefined') {
+  if (
+    typeof window !== 'undefined' &&
+    typeof window.addEventListener === 'function' &&
+    typeof window.removeEventListener === 'function' &&
+    typeof window.dispatchEvent === 'function'
+  ) {
     return window;
   }
   let eventListeners = new Map<string, Set<EventListener>>();

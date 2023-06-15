@@ -36,7 +36,10 @@ export function dispatch<E extends EventType>(
   type: E['type'],
   data: Omit<E, 'type'>,
 ) {
-  const event = Object.assign(new Event(type), data);
+  const event = Object.assign(
+    typeof Event === 'function' ? new Event(type) : { type },
+    data,
+  );
   window.dispatchEvent(event);
 }
 
